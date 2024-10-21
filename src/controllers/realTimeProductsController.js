@@ -2,7 +2,7 @@ import ProductsRepository from '../repositories/productsRepository.js';
 
 const productsRepository = new ProductsRepository();
 
-// Crear producto
+
 export const createProduct = async (req, res) => {
     try {
         const { name, price, stock } = req.body;
@@ -13,7 +13,7 @@ export const createProduct = async (req, res) => {
     }
 };
 
-// Actualizar producto
+
 export const updateProduct = async (req, res) => {
     try {
         const { id } = req.params;
@@ -28,7 +28,7 @@ export const updateProduct = async (req, res) => {
     }
 };
 
-// Eliminar producto
+
 export const deleteProduct = async (req, res) => {
     try {
         const { id } = req.params;
